@@ -14,7 +14,7 @@ curl -Lo minikube https://storage.googleapis.com/minikube/releases/latest/miniku
 sudo install minikube /usr/local/bin
 wget https://download.virtualbox.org/virtualbox/6.0.8/virtualbox-6.0_6.0.8-130520~Ubuntu~bionic_amd64.deb
 apt-get install gcc g++ make ureadahead systemd mime-support shared-mime-info -y
-apt --fix-broken install
+sudo apt --fix-broken install -y
 sudo dpkg -i virtualbox-6.0_6.0.8-130520~Ubuntu~bionic_amd64.deb
 
 minikube start
